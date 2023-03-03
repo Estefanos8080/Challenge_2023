@@ -10,7 +10,7 @@ data = np.load('chestmnist.npz')
 # Retrieve one image from the training set
 image = data['train_images'][0]
 
-# Scale the image by a factor of 2
+# Scale the image by a factor of 15
 scale = 15
 new_size = (int(image.shape[1] * scale), int(image.shape[0] * scale))
 scaled_image = Image.fromarray(image).resize(new_size)
